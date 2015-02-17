@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load i18n future mezzanine_tags staticfiles %}
+
+{% block meta_title %}{% trans "Search Results" %}{% endblock %}
+{% block title %}{% trans "Search Results" %}{% endblock %}
+{% block extra_head %}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block breadcrumb_menu %}
+<li>
+    <a href="/schedule/lista_pacientes">{% trans "Home" %}</a>
+</li>
+<li class="active">{% trans "Search Results" %}</li>
+{% endblock %}
+
+{% block main %}
+
+<div id="search-results">
+    {% for result in results.object_list %}
+    <h5>{{ forloop.counter0|add:results.start_index }})
+
+                      <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="{{ e.title }}" target="_parent">
+    <img alt="image" class="img-responsive" src='{% static 'schedule/fullcalendar/logo.png' %}'></a>
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="../blog/{{ e.paciente_id }}/hc/" target="_parent">{{ result.nombre }}<small class="pull-right"> OSDE </small></a></h4>
+
+
+                                 <form method="post" action="/schedule/atendido/{{ e.created_at| date:"U" }}/" >{% csrf_token %}
+                     </form> 
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+                    
+                    <div class="clearfix visible-sm"></div>
+    <a href="{{ result.get_absolute_url }}">Ver HC</a>
+    {% endfor %}
+</div>
+
+{% pagination_for results %}
+
+{% endblock %}

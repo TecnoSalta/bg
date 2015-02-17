@@ -1,0 +1,54 @@
+2014-12-23 09:47:53: -- Analysis Started by User
+2014-12-23 09:47:53: L: State file does not exist: C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/_gsdata_/_file_state_v4._gs
+2014-12-23 09:50:34: Changes: 36, Conflicts: 0, CopyTime: 0, CopyState: 2.249/0, Errors: 0, All: 2286
+2014-12-23 09:50:34: Left to Right: Copy File: 36 Copy State: 2249 
+2014-12-23 09:50:34: -- Analysis Complete. Time 00:02:46, Speed: 49 files/s
+2014-12-23 09:50:34: 
+2014-12-23 09:54:55: === User Changed Action from 'EA_COPY_STATE_LEFT_TO_RIGHT' to 'NO_COPY' on item /blog/migrations
+2014-12-23 09:54:55: === User Changed Action from 'COPY_LEFT_TO_RIGHT' to 'NO_COPY' on item /blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.py
+2014-12-23 09:54:55: === User Changed Action from 'COPY_LEFT_TO_RIGHT' to 'NO_COPY' on item /blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.pyc
+2014-12-23 09:54:55: Done.
+2014-12-23 09:55:04: === User Reverts Action from 'NO_COPY' to 'EA_COPY_STATE_LEFT_TO_RIGHT' on item /blog/migrations
+2014-12-23 09:55:04: === User Reverts Action from 'NO_COPY' to 'COPY_LEFT_TO_RIGHT' on item /blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.py
+2014-12-23 09:55:04: === User Reverts Action from 'NO_COPY' to 'COPY_LEFT_TO_RIGHT' on item /blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.pyc
+2014-12-23 09:55:04: Done.
+2014-12-23 09:55:56: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2014-12-23 09:55:56: == Sync Started by User
+2014-12-23 09:57:30: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/admin.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/admin.py'
+2014-12-23 09:57:33: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/admin.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/admin.pyc'
+2014-12-23 09:57:34: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/forms.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/forms.py'
+2014-12-23 09:57:34: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/forms.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/forms.pyc'
+2014-12-23 09:57:36: Copy New 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.py'
+2014-12-23 09:57:36: Copy New 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/migrations/0021_auto__add_estudio__del_field_blogpost_featured_image__del_field_blogpo.pyc'
+2014-12-23 09:57:37: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/models.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/models.py'
+2014-12-23 09:57:38: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/models.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/models.pyc'
+2014-12-23 09:57:39: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/templates/admin/includes/quick_blog.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/templates/admin/includes/quick_blog.html'
+2014-12-23 09:57:39: Copy New 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/templates/blog/blog_post_edit_paciente.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/templates/blog/blog_post_edit_paciente.html'
+2014-12-23 09:57:49: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/templates/blog/blog_post_historia.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/templates/blog/blog_post_historia.html'
+2014-12-23 09:57:50: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/templatetags/blog_tags.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/templatetags/blog_tags.py'
+2014-12-23 09:57:51: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/templatetags/blog_tags.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/templatetags/blog_tags.pyc'
+2014-12-23 09:57:51: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/urls.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/urls.py'
+2014-12-23 09:57:52: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/urls.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/urls.pyc'
+2014-12-23 09:57:53: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/views.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/views.py'
+2014-12-23 09:57:54: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/blog/views.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/blog/views.pyc'
+2014-12-23 09:57:55: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/admin.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/admin.py'
+2014-12-23 09:57:55: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/admin.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/admin.pyc'
+2014-12-23 09:57:56: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/defaults.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/defaults.py'
+2014-12-23 09:57:58: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/defaults.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/defaults.pyc'
+2014-12-23 09:57:59: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/models.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/models.py'
+2014-12-23 09:58:00: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/models.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/models.pyc'
+2014-12-23 09:58:00: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/static/mezzanine/css/admin/global.css' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/static/mezzanine/css/admin/global.css'
+2014-12-23 09:58:01: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/static/mezzanine/img/logo.png' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/static/mezzanine/img/logo.png'
+2014-12-23 09:58:02: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/admin/base_site.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/admin/base_site.html'
+2014-12-23 09:58:02: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/admin/index.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/admin/index.html'
+2014-12-23 09:58:03: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/admin/login.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/admin/login.html'
+2014-12-23 09:58:04: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/base.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/base.html'
+2014-12-23 09:58:04: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/includes/form_errors.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/includes/form_errors.html'
+2014-12-23 09:58:05: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/index.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/index.html'
+2014-12-23 09:58:05: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/core/templates/search_results.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/core/templates/search_results.html'
+2014-12-23 09:58:06: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/forms/fields.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/forms/fields.pyc'
+2014-12-23 09:58:06: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/forms/templates/admin/forms/change_form.html' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/forms/templates/admin/forms/change_form.html'
+2014-12-23 09:58:07: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/utils/html.py' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/utils/html.py'
+2014-12-23 09:58:08: Copy Over 'C:/Python27/Scripts/mzasite/Lib/site-packages/mezzanine/utils/html.pyc' -> 'sftp://arroyo.duckdns.org/webapps/www/lib/python2.7/site-packages/mezzanine/utils/html.pyc'
+2014-12-23 09:58:11: == Sync Complete. Time: 00:02:19, Speed: 10,3 KB/s, OK: 2.285, Errors: 0
+2014-12-23 09:58:11: 

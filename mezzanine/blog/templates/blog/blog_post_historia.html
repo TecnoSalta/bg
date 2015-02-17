@@ -1,0 +1,186 @@
+{% load pages_tags mezzanine_tags i18n future staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="David Salvador Sebastian Mendez">
+<title>
+    Consultorios Oftalmológicos
+</title>
+<!-- Bootstrap core CSS -->
+<!-- ED -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+</script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+
+<!---->
+<link rel='stylesheet' type='text/css' href='{% static 'schedule/js/bootstrap.min.css' %}' />
+<link rel='stylesheet' type='text/css' href='{% static 'schedule/fullcalendar/fullcalendar.css' %}' />
+<link rel='stylesheet' type='text/css' href='{% static 'schedule/fullcalendar/fullcalendar.print.css' %}' media='print' />
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="icon" href="{% static 'schedule/favicon.ico' %}">
+
+  </head>
+  <body>
+      <!-- Meta, title, CSS, favicons, etc. -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/schedule/lista_pacientes">
+        <img height=30 width = 60 src="{% static 'schedule/fullcalendar/logo.png' %}">
+
+  Consultorios <small>Oftalmológicos</small>
+
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/schedule/editarpac/{{ paciente.id }}">Editar Paciente</a></li>
+        <li><a href="/schedule/ne/{{ paciente.id }}">Nueva HC</a></li>
+        <li>
+          {% search_form "blog.BlogPost" %}
+      </li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% block content %}
+ <h1>Historial Clínica</h1>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+    <h3 class="panel-title"><a href="/schedule/editarpac/{{ paciente.id }}"><strong>{{paciente.nombre}} - D.N.I.: {{paciente.title}}</strong></a></h3>
+  </div>
+ </div> 
+  <div class="panel-body">
+  <address>
+
+   {{paciente.obra_social}} - {{paciente.obra_social_numero}} / {{paciente.obra_social_plan}}<br>
+  {{paciente.domicilio}}<br>
+  <abbr title="Phone"> Tel:</abbr> {{paciente.telefono}} <br>
+  {{paciente.email}}<br>
+  <strong>MC.</strong> {{paciente.motivo_de_consulta}}<br>
+  <strong>A.P.P.</strong> {{paciente.antecedentes_personales_p}}<br>
+  <strong>A.P.</strong> {{paciente.antecedentes_personales}}<br>
+  
+  </address>
+  </div>
+      {% for estudio in estudios %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{ estudio.created|date:"d/m/Y" }}</h3>
+      </div><!--panel heading-->
+      <div class="panel-body">
+        {% if estudio.r_e_od %}
+         <div class="row">
+         <p class="text-left"><strong>A.R.M.</strong></p>
+         <p class="text-left"><strong>*R*</strong></p>
+         
+         <div class="col-md-6">
+         <p class="text-left"><strong>O.D.</strong></p>
+         <p class="text-left"> E.  {{estudio.r_e_od}}   C.  {{estudio.r_c_od}}   Eje {{estudio.r_eje_od}} °</p>
+         
+         </div>
+         <div class="col-md-6">
+          <p class="text-left"><strong>O.I. </strong></p>
+          <p class="text-left">   E. {{estudio.r_e_oi}}  C.{{estudio.r_c_oi}} Eje {{estudio.r_eje_oi}} °</p>
+         </div>
+         <p class="text-left"><strong>K*</strong></p>
+         <p class="text-left"><strong>K1 {{ estudio.k_k1_od }} K2 {{ estudio.k_k2_od }}</strong></p>
+         <p class="text-left"><strong>K1 {{ estudio.k_k1_oi }} K2 {{ estudio.k_k2_oi }}</strong></p>
+      {% endif %} 
+         {% if estudio.av_sc_od %}
+         <div class="row">
+          <p class="text-left"><strong>A.V.</strong></p>
+          <p class="text-left">
+           <strong>O.D. S/C</strong>: 
+             {{ estudio.av_sc_od }}
+           <strong>O.I. S/C</strong> :
+             {{ estudio.av_sc_oi }}
+          </p>
+          <p class="text-left">
+           <strong>O.D. C/C</strong>: 
+             {{ estudio.av_cc_od }}
+           <strong>O.I. C/C</strong> :
+             {{ estudio.av_cc_oi }}
+          </p>
+         </div><!--ediv row-->
+          {% endif %} 
+         {% if estudio.pio_od %}
+         <div class="row">
+          <p class="text-left"><strong>P.I.O.</strong></p>
+          <p class="text-left">
+           <strong>O.D.</strong>: 
+             {{ estudio.pio_od }}
+           <strong>O.I.</strong> :
+             {{ estudio.pio_oi }}
+          </p>
+          </div><!--ediv row-->
+         {% endif %}
+
+         {% if estudio.obi_fondo %}
+          <div class="row">
+           <p class="text-left"><strong>O.B.I.</strong></p>
+           <p class="text-left">
+             {{ estudio.obi_fondo }}
+           </p>
+          </div>
+          {% endif %}  
+
+         {% if estudio.dyt_consulta %}
+         <div class="row">
+           <p class="text-left"><strong>Consulta</strong></p>
+           <p class="text-left">
+             <textarea rows="3" cols="30">{{ estudio.dyt_consulta }}</textarea>
+           </p>
+          </div>   
+         {% endif %}
+         {% if estudio.dyt_diagnostico %}
+          <div class="row">
+           <p class="text-left"><strong>Diagnostico</strong></p>
+           <p class="text-left">
+             <textarea rows="3" cols="30">{{ estudio.dyt_diagnostico }}</textarea>
+           </p>
+          </div>  
+         {% endif %}
+         {% if estudio.dyt_tratamiento %}
+          <div class="row">
+           <p class="text-left"><strong>Tratamiento</strong></p>
+           <p class="text-left">
+             <textarea rows="3" cols="30">{{ estudio.dyt_tratamiento }}</textarea>
+           </p>
+          </div>  
+         {% endif %}
+      </div><!--panel body-->
+    </div><!--panel-default-->
+      
+     {% empty %}
+            <tr> El paciente seleccionado, no registra estudios.</tr>
+    {% endfor %}
+    {% endblock %}
+
+
+  </body>
+  
